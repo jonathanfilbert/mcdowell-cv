@@ -1,0 +1,126 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+%!TEX program = lualatex
+
+
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+% Set applicant's personal data for header
+\name{Jonathan F. Lisyanto}
+\address{(+62) 888-9995-2050 \linebreak \href{mailto:jonathanflisyanto@gmail.com}{jonathanflisyanto@gmail.com}}
+\contacts{Github: \href{https://github.com/jonathanfilbert}{jonathanfilbert} \linebreak LinkedIn: \href{https://www.linkedin.com/in/jonathanflisyanto/}{jonathanflisyanto} }
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\begin{document}
+
+
+	% Print the header
+	\makeheader
+	
+
+	% --- begin edication section ------
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Depok, ID}{Universitas Indonesia}{Summer 2018 -- Sep 2022 (exp.)}
+			\begin{itemize}
+				\item B.CompSc in Information Systems, current GPA: 3.65
+				\item Societies: Teaching Assistant, Student Body, Developer Student Club: UI Chapter core member.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Online}{Stanford University}{Summer 2018}
+			\begin{itemize}
+				\item Online Summer Session - CS101: Introduction to Computing Principles
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	% ---- ends education section ------
+
+	% ---- begins employment section ------
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Experience Director}{\href{https://garudahacks.com/}{GarudaHacks}}{Oct 2020 - Present}
+			\begin{itemize}
+				\item Garudahacks is the biggest international collegiate hackathon managed by Indonesian students.
+				\item Managed and led 3 fully-remote designers and illustrators in creating a new design system and brand identity for Garudahacks and soon-to-be parent organization, GarudaHQ.
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Software Engineer, Part-time}{\href{https://pintu.co.id/}{Pintu}}{Aug 2020 - Present}
+			\begin{itemize}
+				\item Pintu is one of Indonesia's fastest growing startup that focuses on democratizing access to crypto for Indonesians by building a user-friendly crypto marketplace.
+				\item Implemented Pintu's new rebranded website including vanilla-CSS animation which resulted in increased web traffic and smaller build. NextJS | Typescript
+				\item Implemented OTC email automation service which resulted in better user-experience. NextJS | SendGrid API
+				\item Implemented Pintu's addressbook, which enables users to have unique @username to send and receive crypto assets from within the app, resulted in excellent reviews and opened opportunities for more functionality that supports @username in the app. React Native | Typescript | NestJS
+			\end{itemize}
+		\end{cvsubsection}
+		
+		
+		\begin{cvsubsection}{Software Engineer, Intern}{\href{https://pintu.co.id/}{Pintu}}{Apr 2020 - Aug 2020}
+			\begin{itemize}
+				\item Implemented multi-channel OTP with WhatsApp, Telegram, SMS, and Email which resulted in less customer complaints and smoother in-app experience. React Native | Typescript
+				\item Implemented Pintu's first ever career web-page with dynamically-generated pages which resulted in company growth from 10 to 50+ in 3 months. NextJS | Typescript | Strapi
+				\item Implemented Biometric Security Security Authentication within Pintu's mobile app that supports TouchID, FaceID, and Fingerprint which resulted in great reviews from users, increased customer-trust, and almost 2 times more downloads. React Native | Swift | Typescript
+			\end{itemize}
+		\end{cvsubsection}
+
+		\begin{cvsubsection}{Teaching Assistant}{Universitas Indonesia}{Aug 2019 -- Present}
+			\begin{itemize}
+				\item Teaching Assistant for Foundation of Programming I \& II, and Web Development course.
+				\item Responsibilities include grading and assisting weekly lab sessions, office hours, 1 on 1 assignments demo, and helping with homework and assignments closely for 15 students.
+			\end{itemize}
+		\end{cvsubsection}
+	
+	\end{cvsection}
+	% --- ends employment section ----
+	
+	% --- begins 
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \href{http://pmb.cs.ui.ac.id/}{PMB Fasilkom UI} (2020). The biggest interactive orientation platform in Universitas Indonesia, used by 1200+ students and alumnis every year. Developed as a senior web engineer in RISTEK, the premiere technology-interest group in Universitas Indonesia. React | Django
+				\item \href{http://jitsi-editreadmedapatbaju.cs.ui.ac.id/}{UIMeet} (2020). The first scalable video conferencing platform in Universitas Indonesia - integrated with SSO UI. Implemented a microservice architecture that consists of a NextJS frontend, Django SSO-UI auth service, and a dockerized Jitsi Meet instance. Docker \& Docker-Compose | NextJS | Typescript | Django | CAS-LDAP
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	% --- begins language and tech stack
+	\begin{cvsection}{Technical Skliss}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item Languages: Javascript, Go, Python, Java, Swift, SQL, Solidity (Familiar)
+				\item Tools: Docker, Git, Kubernetes, AWS EC2 \& S3, GCP CE, CS, \& GKE
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
